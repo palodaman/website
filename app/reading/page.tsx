@@ -12,7 +12,6 @@ const books = [
     rating: 5,
     review: 'A very feel good book that makes you realize how granted you have taken the life for',
     category: 'Life',
-    coverUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1974',
   },
   {
     title: 'The Three Body Problem Trilogy',
@@ -20,7 +19,6 @@ const books = [
     rating: 4,
     review: 'Some disgusting, terrifying ideas about what lies in the intergalactic space out there',
     category: 'Sci-fi',
-    coverUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1974',
   },
   {
     title: 'Stories of Your Life and Others',
@@ -28,7 +26,6 @@ const books = [
     rating: 5,
     review: 'A bunch of very good imaginitive plots that left my mind boggled',
     category: 'Sci-fi',
-    coverUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1974',
   }
   //more books here
 ];
@@ -49,7 +46,10 @@ export default function Reading() {
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Reading List</h1>
         <p className="text-muted-foreground mt-2">
-          Books I've read and recommend
+          The Covid pandemic is what sparked my interest for reading, giving me more time to explore things I had not before. 
+          Since then, I have not looked back. Recently, I also invested in an e-reader, which has transformed my reading experience.
+          Now, I can read effortlessly during my commutes to school or unwind with a good book before going to bed. 
+          Following are some books I've read, re-read, and recommend.
         </p>
       </div>
 
@@ -76,14 +76,7 @@ export default function Reading() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {filteredBooks.map((book, index) => (
           <Card key={index} className="flex overflow-hidden">
-            <div className="w-1/3 relative">
-              <img
-                src={book.coverUrl}
-                alt={book.title}
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="w-2/3 p-6 space-y-4">
+            <div className="p-6 space-y-4 w-full">
               <div>
                 <h2 className="text-xl font-semibold">{book.title}</h2>
                 <p className="text-muted-foreground">{book.author}</p>

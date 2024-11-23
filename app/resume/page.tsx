@@ -30,13 +30,47 @@ export default function Resume() {
 
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold">Experience</h2>
+
+
+        <Card className="p-6 space-y-4">
+          <div className="flex justify-between">
+            <div>
+              <h3 className="text-lg font-semibold">Teaching Assistant for Italian Food History (ITAL300) </h3>
+              <p className="text-muted-foreground">University of Victoria </p>
+            </div>
+            <p className="text-muted-foreground"> Sep 2024 - Dec 2024</p>
+          </div>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>Graded quizzes of over 70 students in the course.</li>
+            <li>Researched and prepared in class activities and quizzes for students</li>
+            <li>Reinforced the material presented by the teacher with students one-on-one and held office hours to solve doubts.</li>
+          </ul>
+        </Card>
+
+        <Card className="p-6 space-y-4">
+          <div className="flex justify-between">
+            <div>
+              <h3 className="text-lg font-semibold">UVic Bound Student Leader </h3>
+              <p className="text-muted-foreground">Global Community, University of Victoria </p>
+            </div>
+            <p className="text-muted-foreground"> Sep 2023 - Oct 2024</p>
+          </div>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>Graded quizzes of over 70 students in the course.</li>
+            <li>Researched and prepared in class activities and quizzes for students</li>
+            <li>Reinforced the material presented by the teacher with students one-on-one and held office hours to solve doubts.</li>
+          </ul>
+        </Card>
+
+
+
         <Card className="p-6 space-y-4">
           <div className="flex justify-between">
             <div>
               <h3 className="text-lg font-semibold">Data Engineering Co-op</h3>
               <p className="text-muted-foreground">Ingrooves Music Group</p>
             </div>
-            <p className="text-muted-foreground"> May 2023 - Sept. 2023</p>
+            <p className="text-muted-foreground"> May 2023 - Aug 2023</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             <li>Developed and managed 10+ data pipelines from retailers including Spotify, Apple Music, and Deezer.</li>
@@ -48,6 +82,60 @@ export default function Resume() {
             applications, improving overall system resilience.</li>
           </ul>
         </Card>
+
+        <Card className="p-6 space-y-4">
+          <div className="flex justify-between">
+            <div>
+              <h3 className="text-lg font-semibold">Quality Engineer</h3>
+              <p className="text-muted-foreground">Dometic</p>
+            </div>
+            <p className="text-muted-foreground"> Sep 2022 - Dec 2022</p>
+          </div>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>Created and updated Power BI dashboards and reports for quality analysis of manufactured machining parts after
+            rigorous cleaning of data.</li>
+            <li>Conducted firmware testing over the CAN network for boat components, identifying potential bugs and saving
+            thousands of dollars in warranty claims through early defect detection.</li>
+            <li>Built and maintained customer warranty systems in MS Access, supporting the management of 100+ warranty
+            claims per month with improved data accuracy and tracking.</li>
+          </ul>
+        </Card>
+
+        <Card className="p-6 space-y-4">
+          <div className="flex justify-between">
+            <div>
+              <h3 className="text-lg font-semibold">CST Go-Live Technical Support </h3>
+              <p className="text-muted-foreground">BC Children’s and Women’s Hospital </p>
+            </div>
+            <p className="text-muted-foreground"> Sep 2022 - Dec 2022</p>
+          </div>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>Devised multi-step automation scripts using powershell and python for data cleaning and exporting, resulting in a
+            significant decrease in reporting turnaround time; tool is now utilized by 8 data analysts across the organization.</li>
+            <li>Hanlded the maintenance of computers, apply policies and card readers on 500+ computers across facility.</li>
+            <li>Troubleshot jira tickets raised by doctors, nurses, and staff, resolving a majority of cases within the first hour to
+            ensure seamless hospital operations.</li>
+          </ul>
+        </Card>
+
+        <Card className="p-6 space-y-4">
+          <div className="flex justify-between">
+            <div>
+              <h3 className="text-lg font-semibold">Teaching Assistant for Engineering Economics (ECON180) </h3>
+              <p className="text-muted-foreground">University of Victoria </p>
+            </div>
+            <p className="text-muted-foreground"> Sep 2022 - Dec 2022</p>
+          </div>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>Graded assignments and papers of over 150 students in the course.</li>
+            <li>Researched and prepared pre-lecture readings for the students</li>
+            <li>Reinforced the material presented by the teacher with students one-on-one and held office hours to solve doubts.</li>
+          </ul>
+        </Card>
+
+
+
+
       </section>
 
       <section className="space-y-6">
@@ -62,9 +150,18 @@ export default function Resume() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-semibold">Education</h2>
+       
+        <div className="flex justify-between">
+            
+            <h2 className="text-2xl font-semibold">Education</h2>
+          </div>
         <Card className="p-6">
-          <h3 className="text-lg font-semibold">Bachelor of Software Engineering</h3>
+        <div className="flex justify-between">
+            <div>
+            <h3 className="text-xl font-semibold">Bachelor of Software Engineering</h3>
+            </div>
+            <p className="text-muted-foreground"> Sep 2020 - Present</p>
+          </div>
           <p className="text-muted-foreground">University of Victoria</p>
           <p className="text-muted-foreground">2020 - Present</p>
         </Card>

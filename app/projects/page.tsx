@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'Personal Website',
     description: 'A personal protfolio website built with Next.js and TypeScript',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015',
+    // image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     github: '#',
     demo: '#',
@@ -28,13 +28,13 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <Card key={index} className="overflow-hidden">
-            <div className="aspect-video relative">
+            {/* <div className="aspect-video relative">
               <img
                 src={project.image}
                 alt={project.title}
                 className="object-cover w-full h-full"
               />
-            </div>
+            </div> */}
             <div className="p-6 space-y-4">
               <h2 className="text-xl font-semibold">{project.title}</h2>
               <p className="text-muted-foreground">{project.description}</p>
