@@ -36,7 +36,7 @@ export default function Resume() {
           <div className="flex justify-between">
             <div>
               <h3 className="text-lg font-semibold">Teaching Assistant for Italian Food History (ITAL300) </h3>
-              <p className="text-muted-foreground">University of Victoria </p>
+              <p className="font-semibold">University of Victoria </p>
             </div>
             <p className="text-muted-foreground"> Sep 2024 - Dec 2024</p>
           </div>
@@ -51,7 +51,7 @@ export default function Resume() {
           <div className="flex justify-between">
             <div>
               <h3 className="text-lg font-semibold">UVic Bound Student Leader </h3>
-              <p className="text-muted-foreground">Global Community, University of Victoria </p>
+              <p className="font-semibold">Global Community, University of Victoria </p>
             </div>
             <p className="text-muted-foreground"> Sep 2023 - Oct 2024</p>
           </div>
@@ -68,7 +68,7 @@ export default function Resume() {
           <div className="flex justify-between">
             <div>
               <h3 className="text-lg font-semibold">Data Engineering Co-op</h3>
-              <p className="text-muted-foreground">Ingrooves Music Group</p>
+              <p className="font-semibold">Ingrooves Music Group</p>
             </div>
             <p className="text-muted-foreground"> May 2023 - Aug 2023</p>
           </div>
@@ -87,7 +87,7 @@ export default function Resume() {
           <div className="flex justify-between">
             <div>
               <h3 className="text-lg font-semibold">Quality Engineer</h3>
-              <p className="text-muted-foreground">Dometic</p>
+              <p className="font-semibold">Dometic</p>
             </div>
             <p className="text-muted-foreground"> Sep 2022 - Dec 2022</p>
           </div>
@@ -105,7 +105,7 @@ export default function Resume() {
           <div className="flex justify-between">
             <div>
               <h3 className="text-lg font-semibold">CST Go-Live Technical Support </h3>
-              <p className="text-muted-foreground">BC Children’s and Women’s Hospital </p>
+              <p className="font-semibold">BC Children’s and Women’s Hospital </p>
             </div>
             <p className="text-muted-foreground"> Sep 2022 - Dec 2022</p>
           </div>
@@ -122,7 +122,7 @@ export default function Resume() {
           <div className="flex justify-between">
             <div>
               <h3 className="text-lg font-semibold">Teaching Assistant for Engineering Economics (ECON180) </h3>
-              <p className="text-muted-foreground">University of Victoria </p>
+              <p className="font-semibold">University of Victoria </p>
             </div>
             <p className="text-muted-foreground"> Sep 2022 - Dec 2022</p>
           </div>
@@ -141,7 +141,7 @@ export default function Resume() {
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold">Skills</h2>
         <div className="flex flex-wrap gap-2">
-          {['TypeScript', 'React', 'Next.js', 'Node.js', 'PostgreSQL', 'AWS', 'Docker', 'Kubernetes', 'Expo', 'React Native', 'Wordpress', 'Shell'].map((skill) => (
+          {['TypeScript', 'React', 'Next.js', 'Node.js', 'PostgreSQL', 'AWS', 'VectorDB', 'OpenAI', 'Docker', 'Kubernetes', 'Python','Expo', 'React Native', 'Wordpress', 'Yoast', 'Shell Scripting', 'Cloudinary','Rancher', 'GraphQL'].map((skill) => (
             <Badge key={skill} variant="secondary">
               {skill}
             </Badge>
@@ -162,7 +162,7 @@ export default function Resume() {
             </div>
             <p className="text-muted-foreground"> Sep 2020 - Present</p>
           </div>
-          <p className="text-muted-foreground">University of Victoria</p>
+          <p className="font-semibold">University of Victoria</p>
           <p className="text-muted-foreground">2020 - Present</p>
         </Card>
       </section>
