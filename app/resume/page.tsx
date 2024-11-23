@@ -6,7 +6,7 @@ import { DownloadIcon } from 'lucide-react';
 
 export default function Resume() {
   const handleDownload = () => {
-    const pdfUrl = '../../assets/Aman_Palod.pdf';
+    const pdfUrl = '../../Aman_Palod.pdf';
     window.open(pdfUrl, '_blank');
   };
 

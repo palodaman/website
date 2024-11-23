@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { MoonIcon, SunIcon } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 const routes = [
   { href: '/', label: 'Home' },
@@ -13,17 +14,26 @@ const routes = [
   { href: '/blog', label: 'Blog' },
   { href: '/reading', label: 'Reading List' },
   { href: '/resume', label: 'Resume' },
-  
- 
 ];
 
 export function Navigation() {
+
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
+const [mounted, setMounted] = useState(false);
+
+useEffect(() => {
+  setMounted(true);
+}, []);
 
   const toggleTheme = () => {
+    console.log("current theme", theme);
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
+
+  if (!mounted) {
+    return null; // or a loading placeholder
+  }
 
   return (
     <nav className="border-b">
