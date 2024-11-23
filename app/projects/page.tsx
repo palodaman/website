@@ -43,7 +43,7 @@ const projects = [
 ];
 
 export default function Projects() {
-  const openInNewTab = (url) => {
+  const openInNewTab = (url: string | URL | undefined) => {
     if (url !== '#') {
       window.open(url, '_blank', 'noopener,noreferrer');
     }

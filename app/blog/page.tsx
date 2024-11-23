@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { SearchIcon } from 'lucide-react';
+import Link from 'next/link';
 
 const posts = [
   {
@@ -14,6 +15,13 @@ const posts = [
     tags: ['Next.js', 'TypeScript', 'Web Development'],
     slug: 'building-modern-web-application',
   },
+  // {
+  //   title: 'a Web Application',
+  //   excerpt: 'Learn how to build a modern  application using Next.js and TypeScript',
+  //   date: '2024-03-21',
+  //   tags: ['Next.js', 'Web Development'],
+  //   slug: 'modern-web-application',
+  // },
   // Add more blog posts here
 ];
 
@@ -46,30 +54,32 @@ export default function Blog() {
 
       <div className="grid gap-6">
         {filteredPosts.map((post) => (
-          <Card key={post.slug} className="p-6">
-            <article className="space-y-4">
-              <div className="space-y-2">
-                <h2 className="text-2xl font-semibold">{post.title}</h2>
-                <p className="text-muted-foreground">{post.excerpt}</p>
-              </div>
-              <div className="flex items-center justify-between">
-                <div className="flex flex-wrap gap-2">
-                  {post.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary">
-                      {tag}
-                    </Badge>
-                  ))}
+          <Link href={`/blog/${post.slug}`} key={post.slug}>
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <article className="space-y-4">
+                <div className="space-y-2">
+                  <h2 className="text-2xl font-semibold">{post.title}</h2>
+                  <p className="text-muted-foreground">{post.excerpt}</p>
                 </div>
-                <time className="text-sm text-muted-foreground">
-                  {new Date(post.date).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  })}
-                </time>
-              </div>
-            </article>
-          </Card>
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-wrap gap-2">
+                    {post.tags.map((tag) => (
+                      <Badge key={tag} variant="secondary">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                  <time className="text-sm text-muted-foreground">
+                    {new Date(post.date).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </time>
+                </div>
+              </article>
+            </Card>
+          </Link>
         ))}
       </div>
     </div>
