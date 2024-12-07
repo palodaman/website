@@ -9,11 +9,11 @@ import Link from 'next/link';
 
 const posts = [
   {
-    title: 'Building a Modern Web Application',
-    excerpt: 'Learn how to build a modern web application using Next.js and TypeScript',
-    date: '2024-03-20',
-    tags: ['Next.js', 'TypeScript', 'Web Development'],
-    slug: 'building-modern-web-application',
+    title: 'Setting up a Custom Domain for my Netlify Website',
+    excerpt: 'My journey to setting up a custom domain for my personal website.',
+    date: '2024-12-06',
+    tags: ['Netlify', 'Porkbun', 'Domains'],
+    slug: 'setting-up-custom-domain'
   },
   // {
   //   title: 'a Web Application',
@@ -38,7 +38,7 @@ export default function Blog() {
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Blog</h1>
         <p className="text-muted-foreground mt-2">
-          Thoughts, tutorials, and insights about software development
+          My thoughts, mistakes, and insights 
         </p>
       </div>
 
