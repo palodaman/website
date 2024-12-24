@@ -4,7 +4,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Navigation } from '@/components/navigation';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
-
+import { SnowOverlay } from 'react-snow-overlay';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -22,6 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="min-h-screen bg-background">
+            <SnowOverlay />
             <Navigation />
             <main className="container mx-auto px-4 py-8">{children}</main>
             <Toaster />
