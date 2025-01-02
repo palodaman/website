@@ -6,7 +6,7 @@ import Link from 'next/link';
 const posts = [
   {
     title: 'Setting up a Custom Domain for my Netlify Website',
-    excerpt: 'My jouurney to setting up a custom domain for my personal website.',
+    excerpt: 'My journey to setting up a custom domain for my personal website.',
     date: '2024-12-06',
     tags: ['Netlify', 'Porkbun', 'Domains'],
     slug: 'setting-up-custom-domain',
@@ -37,13 +37,72 @@ I’d love to say this went smoothly, but it didn’t. After spending hours tryi
 
 When I finally gathered the courage to return to “domain hell” (as I now affectionately call it), I did some more online research with a fresh mind and this time it went much smoother. That’s when I learned that DNS records can take up to 48 hours to propagate. I updated the settings, created the necessary DNS records, and—not wanting to stress further—decided to distract myself with some video games.
 
-When I came back, my website was finally live on both the DNS records I had set! Seeing the google search for my domain name showed my website, amd I was stoked. 
+When I came back, my website was finally live on both the DNS records I had set! Seeing the google search for my domain name showed my website, and I was stoked. 
 
 Thanks for reading my blog! I hope this story helps anyone else navigating the world of custom domains. Until next time!
     `,
+    images: [
+    ],
   },
-];
+  {
+    title: 'Debloating My CAT S22 Flip Phone',
+    excerpt: 'Debloating and customizing my CAT S22 Flip Phone',
+    date: '2024-12-31',
+    tags: ['Dumb Phone', 'CAT', 'UAD'],
+    slug: 'debloating-my-flip-phone',
+    content: `
+Hullo, 
 
+For the past three years, I had been using a OnePlus Nord 2 and had been eyeing a change for some time. Initially, I was considering upgrading to either the **Google Pixel 9 Pro** or exploring the uniqueness of the **Nothing Phone**. However, I stumbled upon the [r/dumbphones](https://www.reddit.com/r/dumbphones) subreddit—and the rest is history.
+
+In this subreddit, I discovered a niche community of people embracing the simplicity of dumb phones, and I was instantly intrigued. I had been lurking in the sub for a while and had seen a lot of people talking about the CAT S22 Flip Phone. It is a rugged flip phone that supports Android 11. The old school geek inside me immediately knew that I had to get it. 
+
+## Why the CAT S22 Flip Phone?
+
+The idea of owning a phone that could help me reduce screen time and get back to the basics was too appealing to pass up. For just **100 CAD**, I placed the order and eagerly awaited its arrival. The phone comes with **2GB RAM** and **16GB storage**, so I knew it wouldn't be the fastest device, but I was ready for the trade-off.
+
+After unboxing the phone, although I had good inital impressions, I could feel the phone was a bit slow due to ample bloatware and a low ram. I knew I had to do something about it.
+
+My first instinct was to root the phone since it was an android and I had often heard about rooting a phone to get rid of bloatware. Since I had no experiecne in actually rooting a phone, I obviously searched it up on youtube and came across [this](https://www.youtube.com/watch?v=YYMY5dOPV1g) guide which promised to get rid of bloatware without even rooting the phone. All I had to do was a) set up the Universal Android Debloater from the github repo on my laptop and b) enable developer mode on my CAT S22.
+
+Here's how I did it:
+
+1. I commenced by trying to install the UAD software on my macbook from this [github repo](https://github.com/0x192/universal-android-debloater), but macOS initially blocked the installation due to security settings. Although I found a workaround, I decided to switch to a Windows laptop for simplicity.
+
+2. Borrowing a friend’s Windows laptop, I installed the UAD software. Setting it up was straightforward—I had to enable **Developer Mode** on the CAT S22 and run the adb devices command in the terminal to connect the phone.
+
+3. Initially, I used my USB-C to USB-C cable to connect the phone, but the device wasn’t recognized. After troubleshooting for a while, I realized I needed to use the original USB-A to USB-C cable that came with the phone. This resolved the issue.
+
+Using UAD’s intuitive interface, I removed most of the bloatware (goodbye, **T-Series and Google Suite**) and instantly noticed an improvement in the phone's responsiveness.
+
+## Setting it up for Daily Use
+
+With the phone decluttered, I downloaded essential utility apps like **WhatsApp**, **Google Maps**, **Uber**, and **Wealthsimple**. I also discovered **F-Droid**, an open-source app store, which allowed me to install **NewPipe**, an ad-free YouTube alternative.
+
+To give the phone a personalized, retro vibe, I changed its icon pack. This required:
+
+1. Installing the **NovaLauncher** app from the Play Store.
+2. Downloading the **PixBit Icon Pack** from the browser.
+
+After some configuration, I managed to apply a retro theme to most of the apps. For those that didn’t support retro icons, I manually edited them. The final result is a visually cohesive and nostalgic interface that perfectly complements the phone's design.
+
+![Retro Themeed CAT S22 Flip Phone](https://res.cloudinary.com/dgxbkvjdh/image/upload/c_crop,ar_1:1/v1735795997/flip_phone_eqwmdr.jpg)
+
+## The Verdict
+
+I’m thrilled with the CAT S22 Flip Phone and am slowly transitioning to it as my everyday carry. I plan to keep the OnePlus Nord 2 for occasional use or while traveling abroad. 
+
+All in all, I am super happy with the phone and am looking to gradually transition to it as I ween off from my One Plus Nord 2.
+`,
+image: [
+  {
+    url: 'https://res.cloudinary.com/dgxbkvjdh/image/upload/c_crop,ar_1:1/v1735795997/flip_phone_eqwmdr.jpg',
+    alt: 'Retro Themed CAT S22 Flip Phone',
+    caption: ''
+  }
+]
+  }
+];
 
 export async function generateStaticParams() {
   return posts.map((post) => ({
@@ -60,8 +119,8 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
   return (
     <div className="max-w-3xl mx-auto space-y-8 py-8">
-      <Link 
-        href="/blog" 
+      <Link
+        href="/blog"
         className="text-sm text-muted-foreground hover:text-primary"
       >
         ← Back to Blog

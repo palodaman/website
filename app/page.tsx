@@ -11,11 +11,10 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center space-y-8 py-12">
       <div className="relative h-40 w-40 overflow-hidden rounded-full">
         <CldImage
-          // src="https://res.cloudinary.com/dgxbkvjdh/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1732329449/79842ED4-7612-48C2-970F-A387CF93F1D7_o5mrka.heic"
           width="600"
           height="400"
           src="IMG_6295_gyj2fh"
-          alt = 'sdf'
+          alt = 'me, myself and I'
         />
       </div>
       

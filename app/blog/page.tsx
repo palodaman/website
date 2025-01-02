@@ -1,29 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { SearchIcon } from 'lucide-react';
-import Link from 'next/link';
-
-const posts = [
-  {
-    title: 'Setting up a Custom Domain for my Netlify Website',
-    excerpt: 'My journey to setting up a custom domain for my personal website.',
-    date: '2024-12-06',
-    tags: ['Netlify', 'Porkbun', 'Domains'],
-    slug: 'setting-up-custom-domain'
-  },
-  // {
-  //   title: 'a Web Application',
-  //   excerpt: 'Learn how to build a modern  application using Next.js and TypeScript',
-  //   date: '2024-03-21',
-  //   tags: ['Next.js', 'Web Development'],
-  //   slug: 'modern-web-application',
-  // },
-  // Add more blog posts here
-];
+import { posts } from '@/lib/data/blog-posts';
 
 export default function Blog() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -38,7 +21,7 @@ export default function Blog() {
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Blog</h1>
         <p className="text-muted-foreground mt-2">
-          My thoughts, mistakes, and insights 
+          Thoughts, tutorials, and insights about software development
         </p>
       </div>
 
