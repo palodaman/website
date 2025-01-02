@@ -21,7 +21,7 @@ export default function Blog() {
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Blog</h1>
         <p className="text-muted-foreground mt-2">
-          Thoughts, tutorials, and insights about software development
+          My thoughts, mistakes, and insights about technology
         </p>
       </div>
 
