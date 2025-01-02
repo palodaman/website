@@ -7,6 +7,13 @@ import { StarIcon } from 'lucide-react';
 
 const books = [
   {
+    title: 'Never Enough',
+    author: 'Andrew Wilkinson',
+    rating: 4,
+    review: 'Was super inspiring to read this insightful book, signed by Andrew Wilkinson himself',
+    categories: ['Biography', 'Memoir'],
+  },
+  {
     title: 'The Shiva Trilogy',
     author: 'Amish Tripathi',
     rating: 4,
