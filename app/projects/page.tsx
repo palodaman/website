@@ -35,8 +35,8 @@ const projects = [
   },
   {
     title: 'Personal Website',
-    description: 'A personal portfolio website built with React+Vite and TypeScript',
-    tags: ['React', 'Vite' , 'TypeScript', 'Tailwind CSS'],
+    description: 'A personal portfolio website built with Next.js and TypeScript',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     github: 'https://github.com/palodaman/website',
     demo: '/',
   },
