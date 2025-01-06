@@ -24,7 +24,7 @@ const projects = [
     description: 'An AI powered furniture visualizer tool in your space. Won 100 Dollars in the UVic pitch competition for it.',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stable diffusion'],
     github: '#',
-    demo: '#',
+    demo: 'https://www.linkedin.com/posts/aman-palod-3a09911b4_excited-to-share-that-udbhav-agarwal-and-activity-7266263901116219392-YHze?utm_source=share&utm_medium=member_desktop',
   },
   {
     title: 'QatalogAI',
@@ -34,8 +34,15 @@ const projects = [
     demo: '#',
   },
   {
+    title: 'Eaglenest Sanctuary',
+    description: 'I built this website for a client who owns a vacation home in Cowichan Valley. The site serves as an introduction to the resort and features a booking calendar synchronized with their Vrbo booking system.',
+    tags: ['React', 'Vite', 'Typescript'],
+    github: '#',
+    demo: 'https://eaglenestsanctuary.com/',
+  },
+  {
     title: 'Personal Website',
-    description: 'A personal portfolio website built with Next.js and TypeScript',
+    description: 'A personal portfolio website built with Next.js and TypeScript.',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     github: 'https://github.com/palodaman/website',
     demo: '/',
