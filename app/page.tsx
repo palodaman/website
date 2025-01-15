@@ -21,7 +21,7 @@ export default function Home() {
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold tracking-tight">Aman Palod</h1>
         <p className="text-xl text-muted-foreground max-w-[600px]">
-          Hi Gamer, I am a 4th year Budding Software Engineering student at the University of Victoria, passionate about building things
+          Hi Gamer, I am a 22-year-old Software Engineer, passionate about building things. 
         </p>
       </div>
 
