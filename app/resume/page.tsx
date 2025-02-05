@@ -56,9 +56,9 @@ export default function Resume() {
             <p className="text-muted-foreground"> Sep 2023 - Oct 2024</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Graded quizzes of over 70 students in the course.</li>
-            <li>Researched and prepared in class activities and quizzes for students</li>
-            <li>Reinforced the material presented by the teacher with students one-on-one and held office hours to solve doubts.</li>
+            <li>Developed and redesigned "The Food Guide", a food security website for the students.</li>
+            <li>Assisted the International Centre for Students in coordinating and delivering diverse programs, events, and initiatives targeted at international students.</li>
+            <li>Increased engagement by 100 followers by curating engaging content for the ICS's social media channels, using Canva Pro,  ensuring consistent brand messaging and effective student outreach.</li>
           </ul>
         </Card>
 
