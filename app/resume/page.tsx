@@ -160,7 +160,7 @@ export default function Resume() {
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold">Skills</h2>
         <div className="flex flex-wrap gap-2">
-          {['TypeScript', 'React', 'Next.js', 'Node.js', 'PostgreSQL', 'AWS', 'VectorDB', 'OpenAI', 'Docker', 'Kubernetes', 'Python','Expo', 'React Native', 'Wordpress', 'Yoast', 'Shell Scripting', 'Cloudinary','Rancher', 'GraphQL'].map((skill) => (
+          {['TypeScript', 'React', 'Next.js', 'Node.js', 'PostgreSQL', 'AWS', 'VectorDB', 'WebDriverIO', 'Docker', 'Kubernetes', 'Python','Expo', 'React Native', 'Azure Devops', 'Yoast', 'Shell Scripting', 'Cloudinary','Rancher', 'GraphQL'].map((skill) => (
             <Badge key={skill} variant="secondary">
               {skill}
             </Badge>
