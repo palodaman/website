@@ -179,7 +179,7 @@ export default function Resume() {
             <div>
             <h3 className="text-xl font-semibold">Bachelor of Software Engineering</h3>
             </div>
-            <p className="text-muted-foreground"> Sep 2020 - Present</p>
+            <p className="text-muted-foreground"> Sep 2020 - May 2025</p>
           </div>
           <p className="font-semibold">University of Victoria</p>
           <p className="text-muted-foreground">2020 - Present</p>
