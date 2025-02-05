@@ -35,6 +35,25 @@ export default function Resume() {
         <Card className="p-6 space-y-4">
           <div className="flex justify-between">
             <div>
+              <h3 className="text-lg font-semibold">QA Dev Engineer </h3>
+              <p className="font-semibold">VertiGIS </p>
+            </div>
+            <p className="text-muted-foreground"> Jan 2025 - May 2025</p>
+          </div>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>Automated functional testing in Chrome and Firefox using Typescript, WebdriverIO, and Jest reducing regression
+              testing time by 20%.</li>
+            <li>Reviewed and validated over 20 pull requests, ensuring high-quality code before merging into the master codebase.</li>
+            <li>Executed comprehensive regression testing for VertiGIS Studio, identifying and reporting 10+ critical bugs in Azure
+              DevOps ahead of the next feature release.</li>
+            <li>Strengthened application by discovering and reporting over 5 bugs on production.</li>
+          </ul>
+        </Card>
+
+
+        <Card className="p-6 space-y-4">
+          <div className="flex justify-between">
+            <div>
               <h3 className="text-lg font-semibold">Teaching Assistant for Italian Food History (ITAL300) </h3>
               <p className="font-semibold">University of Victoria </p>
             </div>
@@ -42,7 +61,7 @@ export default function Resume() {
           </div>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             <li>Graded quizzes of over 70 students in the course.</li>
-            <li>Researched and prepared in class activities and quizzes for students</li>
+            <li>Researched and prepared in class activities and quizzes for students.</li>
             <li>Reinforced the material presented by the teacher with students one-on-one and held office hours to solve doubts.</li>
           </ul>
         </Card>
