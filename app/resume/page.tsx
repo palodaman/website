@@ -6,7 +6,7 @@ import { DownloadIcon } from 'lucide-react';
 
 export default function Resume() {
   const handleDownload = () => {
-    const pdfUrl = '../../Aman_Palod.pdf';
+    const pdfUrl = '../../Aman_Palod_Resume.pdf';
     window.open(pdfUrl, '_blank');
   };
 
@@ -31,6 +31,21 @@ export default function Resume() {
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold">Experience</h2>
 
+        <Card className="p-6 space-y-4">
+          <div className="flex justify-between">
+            <div>
+              <h3 className="text-lg font-semibold">Founder </h3>
+              <p className="font-semibold">PixelCrafted - Agency </p>
+            </div>
+            <p className="text-muted-foreground"> May 2023 - Present</p>
+          </div>
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>Built and managed websites for 5+ clients over 2 years, catering to small and medium businesses and solopreneurs.</li>
+            <li>Consulted with clients to understand business needs, ensuring customized and scalable solutions.</li>
+            <li>Provided end-to-end solutions, including UI/UX design, performance optimization, and SEO best practices.</li>
+            <li>Developed and maintained websites using Drupal, WordPress, React, Next.js, and Vite.</li>
+          </ul>
+        </Card>
 
         <Card className="p-6 space-y-4">
           <div className="flex justify-between">
@@ -41,12 +56,14 @@ export default function Resume() {
             <p className="text-muted-foreground"> Jan 2025 - May 2025</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Automated functional testing in Chrome and Firefox using Typescript, WebdriverIO, and Jest reducing regression
-              testing time by 20%.</li>
-            <li>Reviewed and validated over 20 pull requests, ensuring high-quality code before merging into the master codebase.</li>
-            <li>Executed comprehensive regression testing for VertiGIS Studio, identifying and reporting 10+ critical bugs in Azure
-              DevOps ahead of the next feature release.</li>
-            <li>Strengthened application by discovering and reporting over 5 bugs on production.</li>
+            <li>Automated 8 functional test suites in Chrome and Firefox using Typescript, WebdriverIO, and Jest reducing
+              regression testing time by 20%.</li>
+            <li>Reviewed and validated over 20 pull requests for bug fixes, ensuring high-quality code before merging into the
+              production codebase.</li>
+            <li>Executed comprehensive regression testing for VertiGIS Studio, identifying and reporting over 10 critical bugs in
+              the release candidate ahead of the next feature release.</li>
+            <li>Wrote and updated several test cases after the corresponding bug fixes and user stories were merged in the master
+              code.</li>
           </ul>
         </Card>
 

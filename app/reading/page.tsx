@@ -7,6 +7,13 @@ import { StarIcon } from 'lucide-react';
 
 const books = [
   {
+    title: 'Black Warrant',
+    author: 'Sunil Gupta',
+    rating: 5,
+    review: 'The confessions of a Tihar Jailer gave interesting insights into the cases of infamous convicts and incidents in India during end of 20th century',
+    categories: ['Crime Thriller', 'Non-fiction'],
+  },
+  {
     title: 'Never Enough',
     author: 'Andrew Wilkinson',
     rating: 4,
