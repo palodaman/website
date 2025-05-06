@@ -34,16 +34,16 @@ export default function Resume() {
         <Card className="p-6 space-y-4">
           <div className="flex justify-between">
             <div>
-              <h3 className="text-lg font-semibold">Founder </h3>
+              <h3 className="text-lg font-semibold">Freelance </h3>
               <p className="font-semibold">PixelCrafted - Agency </p>
             </div>
             <p className="text-muted-foreground"> May 2023 - Present</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Built and managed websites for 5+ clients over 2 years, catering to small and medium businesses and solopreneurs.</li>
+            <li>Built and managed 7 client websites over 2 years, catering to small and medium businesses and solopreneurs.</li>
             <li>Consulted with clients to understand business needs, ensuring customized and scalable solutions.</li>
             <li>Provided end-to-end solutions, including UI/UX design, performance optimization, and SEO best practices.</li>
-            <li>Developed and maintained websites using Drupal, WordPress, React, Next.js, and Vite.</li>
+            <li>Developed and maintained websites using Webflow, Drupal, WordPress, React, Next.js, and Vite.</li>
           </ul>
         </Card>
 
@@ -56,14 +56,13 @@ export default function Resume() {
             <p className="text-muted-foreground"> Jan 2025 - May 2025</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Automated 8 functional test suites in Chrome and Firefox using Typescript, WebdriverIO, and Jest reducing
-              regression testing time by 20%.</li>
-            <li>Reviewed and validated over 20 pull requests for bug fixes, ensuring high-quality code before merging into the
-              production codebase.</li>
-            <li>Executed comprehensive regression testing for VertiGIS Studio, identifying and reporting over 10 critical bugs in
-              the release candidate ahead of the next feature release.</li>
-            <li>Wrote and updated several test cases after the corresponding bug fixes and user stories were merged in the master
-              code.</li>
+            <li>Automated 8 functional test suites in Chrome using Typescript, WebdriverIO, and Jest reducing regression testing
+              time and gaining good knowledge of DOM traversal.</li>
+            <li>Reviewed and validated several pull requests for bug fixes and user stories, ensuring defect free code before merging
+              into the production codebase.</li>
+            <li>Executed comprehensive regression testing for VertiGIS Studio Web, identifying and reporting multiple bugs in the
+              release candidate ahead of the next feature release.</li>
+            <li>Wrote and updated several test cases after the corresponding bug fixes and user stories were merged.</li>
           </ul>
         </Card>
 
@@ -109,12 +108,12 @@ export default function Resume() {
             <p className="text-muted-foreground"> May 2023 - Aug 2023</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Developed and managed 10+ data pipelines from retailers including Spotify, Apple Music, and Deezer.</li>
+            <li>Maintained 5+ data pipelines from retailers including Spotify, Apple Music, and Deezer.</li>
             <li>Automated cron job setup in Rancher by developing a dedicated API, eradicating manual setup. Integrated a Slack
             webhook for real-time alerts, resulting in quicker response times and reducing issue resolution time by 30 percent.</li>
             <li>Designed and deployed a GitLab crawler API, tracking version utilization across multiple in-house data tools to
             streamline compliance and reduce redundancy.</li>
-            <li>Strengthened application security by identifying and remediating critical log4j vulnerabilities across 5+ Java
+            <li>Strengthened application security by identifying and remediating critical log4j vulnerabilities across a couple of Java
             applications, improving overall system resilience.</li>
           </ul>
         </Card>
@@ -146,11 +145,11 @@ export default function Resume() {
             <p className="text-muted-foreground"> Sep 2022 - Dec 2022</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Devised multi-step automation scripts using powershell and python for data cleaning and exporting, resulting in a
-            significant decrease in reporting turnaround time; tool is now utilized by 8 data analysts across the organization.</li>
+            <li>Developed miscellaneous scripts to automate tasks such as cleaning data and exporting data to the database on the
+              network using Powershell, Python, SQL server, and Pulover’s Macro recording software.</li>
             <li>Hanlded the maintenance of computers, apply policies and card readers on 500+ computers across facility.</li>
-            <li>Troubleshot jira tickets raised by doctors, nurses, and staff, resolving a majority of cases within the first hour to
-            ensure seamless hospital operations.</li>
+            <li>Led a team of 4 co-op students and assessed and troubleshooted technical problems brought by doctors, nurses, and
+              staff members</li>
           </ul>
         </Card>
 
