@@ -228,7 +228,7 @@ export default function Resume() {
               <h3 className="text-lg font-semibold">CST Go-Live Technical Support </h3>
               <p className="font-semibold">BC Children's and Women's Hospital </p>
             </div>
-            <p className="text-muted-foreground"> Sep 2022 - Dec 2022</p>
+            <p className="text-muted-foreground"> Jan 2022 - Apr 2022</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             <li>Developed miscellaneous scripts to automate tasks such as cleaning data and exporting data to the database on the
@@ -245,7 +245,7 @@ export default function Resume() {
               <h3 className="text-lg font-semibold">Teaching Assistant for Engineering Economics (ECON180) </h3>
               <p className="font-semibold">University of Victoria </p>
             </div>
-            <p className="text-muted-foreground"> Sep 2022 - Dec 2022</p>
+            <p className="text-muted-foreground"> Sep 2021 - Dec 2021</p>
           </div>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             <li>Graded assignments and papers of over 150 students in the course.</li>
